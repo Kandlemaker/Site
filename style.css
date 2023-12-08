@@ -16,7 +16,7 @@ html,
 }
 
 html {
-    background-color: black;
+    background-color: #1d2125;
 }
 
 #homebody {
@@ -54,6 +54,8 @@ main {
     flex-direction: row;
     justify-content: start;
     align-items: start;
+    width: 100%;
+    padding: 20px 0px 0px 0px;
 }
 
 .conteudo {
@@ -157,29 +159,25 @@ main {
 }
 
 #gallerybody {
-    background: radial-gradient(rgb(124, 0, 103), black);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-}
-
-.main {
-    width: 100%;
-    padding: 20px 0px 0px 0px;
+    background-repeat: repeat;
 }
 
 .img {
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/4;
+    border-radius: 2px;
+    box-shadow: 0 0 10px 0 black;
 }
 
 .gallery {
     display: grid;
+    gap: calc(2vw);
     width: 80%;
+    --gap: 2%;
     --num-cols: 4;
     --row-height: 40vw;
-    box-sizing: border-box;
     grid-template-columns: repeat(var(--num-cols), 1fr);
-    gap: var(--gap);
 }
 
 .links-galeria,
@@ -192,13 +190,20 @@ main {
 }
 
 .links-galeria {
-    padding: 5vh;
+    padding: 7vh;
 }
 
-.links {
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    margin: 1vh;
-    color: #ffffff;
+.doublecolumn {
+    aspect-ratio: 4/3;
+    grid-column: span 2;
+}
+
+.triplecolumn {
+    aspect-ratio: 4/2;
+    grid-column: span 3;
+}
+
+.twobytwo {
+    grid-column: span 2;
+    grid-row: span 2;
 }

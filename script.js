@@ -18,11 +18,13 @@ let imgModal = (src) => {
     modal.append(newImage, closeBtn);
     modal.addEventListener('click', (e) => {
         newImage.style.animation = 'fadeout 0.4s ease-in-out, blurin 0.4s ease-in-out';
+        newImage.style.opacity = '0';
         modal.style.animation = 'bluronceagain 0.4s ease-in-out';
+        modal.style.backdropFilter = 'blur(0px)';
         setTimeout(function() {
             newImage.remove();
             modal.remove();
             document.body.style.overflow = '';
-          }, 390);
+          }, 400);
     })
 };

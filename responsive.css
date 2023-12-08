@@ -80,7 +80,7 @@ html {
 
     .gallery {
         width: 80%;
-        --num-cols: 3;
+        --num-cols: 4;
     }
 
     .corpo {
@@ -137,7 +137,6 @@ html {
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(100px);
-    margin-top: -1px;
     animation: bluroncemore 0.5s ease-in-out;
 }
 
@@ -147,4 +146,5 @@ html {
     max-width: 90vw;
     object-fit: contain;
     animation: fadein 0.2s ease-in-out, blurout 0.4s ease-in-out;
+    box-shadow: 0 0 5px 0 black;
 }
