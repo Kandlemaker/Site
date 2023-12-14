@@ -28,42 +28,51 @@
 
 @keyframes bluroncemore {
     from {
+        -webkit-backdrop-filter: blur(0px);
         backdrop-filter: blur(0px);
     }
     to {
+        -webkit-backdrop-filter: blur(100px);
         backdrop-filter: blur(100px);
     }
 }
 
 @keyframes bluronceagain {
     from {
+        -webkit-backdrop-filter: blur(100px);
         backdrop-filter: blur(100px);
     }
     to {
+        -webkit-backdrop-filter: blur(0px);
         backdrop-filter: blur(0px);
     }
 }
 
 @keyframes blurin {
     from {
+        -webkit-filter: blur(0px);
         filter: blur(0px);
     }
     to {
+        -webkit-filter: blur(100px);
         filter: blur(100px);
     }
 }
 
 @keyframes blurout {
     from {
+        -webkit-filter: blur(100px);
         filter: blur(100px);
     }
     to {
+        -webkit-filter: blur(0px);
         filter: blur(0px);
     }
 }
 
 html {
     opacity: 1;
+    -webkit-animation: fadein 1.5s ease-in-out, blurout 1s ease-in-out;
     animation: fadein 1.5s ease-in-out, blurout 1s ease-in-out;
 }
 
@@ -86,6 +95,7 @@ html {
     .corpo {
         height: 100%;
         width: 100%;
+        -webkit-backdrop-filter: blur(100px);
         backdrop-filter: blur(100px);
     }
 
@@ -136,7 +146,9 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-backdrop-filter: blur(100px);
     backdrop-filter: blur(100px);
+    -webkit-animation: bluroncemore 0.5s ease-in-out;
     animation: bluroncemore 0.5s ease-in-out;
 }
 
@@ -145,6 +157,7 @@ html {
     max-height: 90vh;
     max-width: 90vw;
     object-fit: contain;
+    -webkit-animation: fadein 0.2s ease-in-out, blurout 0.4s ease-in-out;
     animation: fadein 0.2s ease-in-out, blurout 0.4s ease-in-out;
     box-shadow: 0 0 5px 0 black;
 }
