@@ -28,3 +28,8 @@ let imgModal = (src) => {
           }, 400);
     })
 };
+window.onload = function() {
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+};
