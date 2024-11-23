@@ -20,7 +20,7 @@ html {
 }
 
 #homebody {
-    background-image: url(assets/images/IMG_0272.JPG);
+    background-image: url(assets/images/Umbrellagirl.jpg);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -168,13 +168,7 @@ main {
 
 .img {
     aspect-ratio: 3/4;
-    border-radius: 2px;
-    box-shadow: 0 0 10px 0 black;
-}
-
-.video {
-    aspect-ratio: 3/4;
-    border-radius: 2px;
+    border-radius: 10px;
     box-shadow: 0 0 10px 0 black;
 }
 

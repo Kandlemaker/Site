@@ -134,7 +134,7 @@ html {
 }
 
 .gallery__item img:hover {
-    box-shadow: 0px 0px 0px 5px rgb(0, 0, 0);
+    box-shadow: 0 0 20px 0 rgb(255, 142, 66);
     transform: scale(105%);
 }
 
