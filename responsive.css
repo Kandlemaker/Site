@@ -133,7 +133,18 @@ html {
     transition: 0.3s ease-in-out;
 }
 
-.gallery__item img:hover {
+.gallery__item {
+    position: relative;
+    display: flex; /* Configura o contêiner como flexível */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 0.5vw;
+}
+
+.gallery__item:hover {
     box-shadow: 0 0 20px 0 rgb(255, 142, 66);
     transform: scale(105%);
 }
