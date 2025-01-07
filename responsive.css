@@ -145,7 +145,8 @@ html {
 }
 
 .gallery__item:hover {
-    box-shadow: 0 0 20px 0 rgb(255, 142, 66);
+    box-shadow: 0 0 15px 0 rgb(255, 142, 66),
+    0 0 3px 0 rgb(255, 233, 161);
     transform: scale(105%);
 }
 
