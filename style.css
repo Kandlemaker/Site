@@ -16,11 +16,15 @@ html,
 }
 
 html {
-    background-color: #1d2125;
+    background: #1d2125;
+}
+
+body {
+    background: radial-gradient(circle, rgb(117, 93, 90), #1d2125);
 }
 
 #homebody {
-    background-image: url(assets/images/Umbrellagirl.jpg);
+    background-image: url(assets/images/IMG_1112.JPEG);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -59,21 +63,29 @@ main {
 }
 
 .conteudo {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: max-content;
     margin-left: 5%;
+    margin-top: 7vw;
 }
 
 .conteudo-principal {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 2%;
+    padding-bottom: 4%;
     justify-content: space-around;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgb(255, 142, 66);
 }
 
 .conteudo-principal-escrito {
-    margin-top: 12vw;
     text-align: center;
     text-shadow: 2px 1px 2px black;
     font-family: 'Jost', sans-serif;
@@ -91,11 +103,11 @@ main {
 }
 
 .botoes {
-    margin-top: 1%;
+    margin-top: 5%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 10%;
 }
 
@@ -103,7 +115,6 @@ main {
     font-family: 'Jost', sans-serif;
     display: inline-block;
     padding: 1vh 2vh;
-    margin: 2%;
     font-size: 1vw;
     font-weight: 300;
     text-decoration: none;
